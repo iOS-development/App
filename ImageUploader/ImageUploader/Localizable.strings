@@ -1,0 +1,37 @@
+/* 
+  Localizable.strings
+  ImageUploader
+
+  Copyright Time at Task Aps 2012. All rights reserved.
+*/
+
+"button_cancel"     = "Tilbage";
+"button_camera"     = "Kamera";
+"button_gallery"    = "Galleri";
+"button_ok"         = "OK";
+"button_upload"     = "Send";
+"button_later"      = "Senere";
+"button_save"       = "Save";
+"button_retake"     = "Tage om";
+"button_back"       = "Afbryd";
+"button_store"      = "Kom igang";
+
+"lbl_upload"            = "Sender billede %d ud af %d";
+"lbl_noimages"          = "";
+"lbl_Image_Uploader"    = "Ikke sendte billeder";
+"lbl_email"             = "Kom igang";
+
+"alert_title_confirm"           = "BekrÊft";
+"alert_title_error"             = "Fejl";
+"alert_title_success"           = "Succes";
+"alert_title_upload"            = "Send billede";
+
+"alert_body_confirm"            = "Vil du virkelig slette billede";
+"alert_body_uploaderror"        = "Vi kunne ikke modtage billedet. Billedet lagres i en kø så du kan sende det senere";
+"alert_body_uploadsuccess"      = "Vi har modtaget dit billede";
+"alert_body_upload"             = "Vil du sende os billedet nu?";
+"alert_body_networkerror"       = "Ingen internet forbindelse. Billedet lagres nu i en kø så  sende det senere";
+"alert_body_emailerror"         = "Din email adresse er ikke gyldig. En gyldig adresse er til eksempeleksempel@hotmail.com.";
+"alert_body_emailreg_fail"      = "Failed to register email..";
+
+"title_save_image"              = "Send billedet";

@@ -1,0 +1,59 @@
+//
+// Prefix header for all source files of the 'ImageUploader' target in the 'ImageUploader' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iPhone SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "UIImage+fixOrientation.h"
+#endif
+
+//#define SERVER_URL  @"http://testing.littleplaystudio.com/ImageUploader.php"
+//#define SERVER_URL      @"http://testing.littleplaystudio.com/PicUploader/ImageUploader.php?devicetoken=%@&imagetype=%@"
+//#define EMAIL_SAVE_URL      @"http://testing.littleplaystudio.com/PicUploader/Email.php?devicetoken=%@&email=%@"
+
+#define SERVER_URL      @"http://images.ebogholderen.dk/PicUploader/ImageUploader.php?devicetoken=%@&imagetype=%@"
+#define EMAIL_SAVE_URL  @"http://images.ebogholderen.dk/PicUploader/Email.php?devicetoken=%@&email=%@"
+
+
+//#define SERVER_URL      @"http://ec2-107-22-98-237.compute-1.amazonaws.com/PicUploader/ImageUploader.php?devicetoken=%@&imagetype=%@"
+//#define SERVER_URL      "http://ec2-107-22-98-237.compute-1.amazonaws.com/PicUploader/ImageUploader.php?devicetoken=%@&imagetype=%@"
+#define NULL_STRING             @""
+#define kUniqueID               @"uniqueid"
+#define kImageUploadFailed      @"imageuploadfailed"
+#define kDefaultUserSetting		1
+#define kUserSettingsStatus     @"settingsstatus"
+#define kEmailRegistered        @"emailregistration"
+
+#define MAX_IMAGE_WIDTH    640.0
+#define MAX_IMAGE_HEIGHT   960.0
+
+typedef enum {
+    NoneScreen,
+    CameraScreen,
+    GalleryScreen,
+    EmailRegisterScreen,
+}SelectedScreen;
+
+typedef enum {
+    HTTPPicUploadRequest,
+    HTTPRegisterMailRequest,
+}HTTPRequest;
+
+typedef enum {
+    kLoadLocallyFirst = 1,
+    kLoadLocallyLast,
+    kNoCaching
+}HTTPRequestCachingType;
+
+typedef enum {
+	VM_SERVER_ERROR = 200,
+	VM_SUCCESS = 100,
+    VM_NOTVALID_EMAIL_ERROR = 300,
+}HTTPResponseCode;
